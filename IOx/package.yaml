@@ -1,0 +1,16 @@
+descriptor-schema-version: "2.2"
+info:
+  name: foglamp
+  version: 1.5.0
+app:
+  cpuarch: x86_64
+  env:
+    FOGLAMP_ROOT: /usr/local/foglamp
+    PATH: /usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/local/foglamp/bin
+  resources:
+    profile: c1.large
+  startup:
+    rootfs: rootfs.tar
+    target:
+      ["bash","/usr/local/foglamp/foglamp.sh"]
+  type: docker
