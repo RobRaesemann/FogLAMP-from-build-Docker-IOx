@@ -61,8 +61,6 @@ COPY plugins/south/systeminfo /usr/local/foglamp/python/foglamp/plugins/south/sy
 
 WORKDIR /usr/local/foglamp
 COPY foglamp.sh .
-#RUN chown root.staff /usr/local/foglamp/foglamp.sh \
-#&& chmod 777 /usr/local/foglamp/foglamp.sh
 
 VOLUME /usr/local/foglamp/data
 
