@@ -1,2 +1,7 @@
 *.tar
 *.exe
+IOx/package/*
+IOx/rootfs.tar
+ioxclient
+IOx/.DS_Store
+.DS_Store

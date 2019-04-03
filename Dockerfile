@@ -41,7 +41,7 @@ RUN apt-get update && apt-get upgrade -y && apt-get install -y --no-install-reco
 WORKDIR /foglamp
 RUN mkdir -p /foglamp \
 && git clone https://github.com/foglamp/FogLAMP.git /foglamp \
-&& git checkout v1.5.0 \
+&& git checkout v1.5.1 \
 && make \
 && make install
 
@@ -65,7 +65,7 @@ COPY foglamp.sh .
 VOLUME /usr/local/foglamp/data
 
 # FogLAMP API port
-EXPOSE 8081 80 1995
+EXPOSE 8081 1995
 
 # start rsyslog, FogLAMP, and tail syslog
 CMD ["bash","/usr/local/foglamp/foglamp.sh"]
@@ -73,4 +73,4 @@ CMD ["bash","/usr/local/foglamp/foglamp.sh"]
 LABEL maintainer="rob@raesemann.com" \
       author="Raesemann" \
       target="IOx" \
-      version="1.5.0" \
+      version="1.5.1" \
