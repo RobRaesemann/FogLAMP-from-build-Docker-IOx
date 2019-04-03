@@ -1,7 +1,7 @@
 descriptor-schema-version: "2.2"
 info:
   name: foglamp
-  version: 1.5.0
+  version: 1.5.1
 app:
   type: docker
   cpuarch: x86_64
@@ -14,7 +14,7 @@ app:
       -
         interface-name: eth0
         ports:
-          tcp: [80, 8081, 1995]
+          tcp: [8081, 1995]
   startup:
     rootfs: rootfs.tar
     target:
