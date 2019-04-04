@@ -45,6 +45,8 @@ RUN mkdir -p /foglamp \
 && make \
 && make install
 
+RUN pip3 install pymodbus
+
 ENV FOGLAMP_ROOT=/usr/local/foglamp
 
 RUN mkdir -p /usr/local/foglamp/python/foglamp/plugins/north/http_north
