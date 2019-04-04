@@ -53,8 +53,8 @@ COPY plugins/north/http_north /usr/local/foglamp/python/foglamp/plugins/north/ht
 RUN mkdir -p /usr/local/foglamp/python/foglamp/plugins/south/b100
 COPY plugins/south/b100 /usr/local/foglamp/python/foglamp/plugins/south/b100
 
-RUN mkdir -p /usr/local/foglamp/python/foglamp/plugins/south/random
-COPY plugins/south/random /usr/local/foglamp/python/foglamp/plugins/south/random
+RUN mkdir -p /usr/local/foglamp/plugins/south/random
+COPY plugins/south/random /usr/local/foglamp/plugins/south/random
 
 RUN mkdir -p /usr/local/foglamp/python/foglamp/plugins/south/systeminfo
 COPY plugins/south/systeminfo /usr/local/foglamp/python/foglamp/plugins/south/systeminfo

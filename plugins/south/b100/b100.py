@@ -7,7 +7,7 @@ from foglamp.common import logger
 from foglamp.plugins.common import utils
 from foglamp.services.south import exceptions
 
-from b100.b100modbus import get_b100_readings, close_connection
+from foglamp.plugins.south.b100.b100modbus import get_b100_readings, close_connection
 
 """ Plugin for reading data from a B100
 """
